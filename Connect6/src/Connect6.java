@@ -5,14 +5,12 @@ import java.util.ArrayList;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 
-public class Connect6 extends JFrame implements MouseMotionListener, MouseListener {
+public class Connect6 extends JFrame implements MouseListener {
 
 	private static int leftTopCornerX = 50;
 	private static int leftTopCornerY = 50;
 	private static int width = 540;
 	private static int height = 540;
-	private static int rightBottomCornerX = leftTopCornerX + width;
-	private static int rightBottomCornerY = leftTopCornerY + height;
 	private static int clkX = 0;
 	private static int clkY = 0;
 	private static boolean isClkd = false;
@@ -24,16 +22,11 @@ public class Connect6 extends JFrame implements MouseMotionListener, MouseListen
 	private static Point[] everyCoordinate = new Point[361];
 	private static boolean isWht = false;
 	private static boolean isBlk = false;
-	// private static boolean isNeutral = false;
-	private static boolean isInProgress = false;
-
+	
 	private JPanel contentPane;
 	private static int stoneCnt;
 	private static int neutralCount;
 
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -346,38 +339,7 @@ public class Connect6 extends JFrame implements MouseMotionListener, MouseListen
 
 				}
 
-//			if(isFull.get(i) && isBlackStone.get(i)) {
-//				if ((isFull.get(i+19) && isBlackStone.get(i+19))) {
-//					if ((isFull.get(i+38) && isBlackStone.get(i+38))) {
-//						if ((isFull.get(i+57) && isBlackStone.get(i+57))) {
-//							if ((isFull.get(i+76) && isBlackStone.get(i+76)) ) {
-//								if ((isFull.get(i+95) && isBlackStone.get(i+95))) {
-//									JOptionPane.showMessageDialog(null, "Black stone wins!", "Game Over", JOptionPane.PLAIN_MESSAGE);
-//									break;
-//								}
-//							}
-//						}
-//					}
-//					
-//				}
-//			}
 //			
-//			if(isFull.get(i) && isWhiteStone.get(i)) {
-//				if ((isFull.get(i+19) && isWhiteStone.get(i+19))) {
-//					if ((isFull.get(i+38) && isWhiteStone.get(i+38))) {
-//						if ((isFull.get(i+57) && isWhiteStone.get(i+57))) {
-//							if ((isFull.get(i+76) && isWhiteStone.get(i+76)) ) {
-//								if ((isFull.get(i+95) && isWhiteStone.get(i+95))) {
-//									JOptionPane.showMessageDialog(null, "White stone wins!", "Game Over", JOptionPane.PLAIN_MESSAGE);
-//									break;
-//								}
-//							}
-//						}
-//					}
-//					
-//				}
-//			}
-
 			}
 
 		}
@@ -405,13 +367,7 @@ public class Connect6 extends JFrame implements MouseMotionListener, MouseListen
 
 	}
 
-	public void mouseReleased(MouseEvent e) {
 
-	}
-
-	/**
-	 * Create the frame.
-	 */
 	public Connect6() {
 
 		int k = 0;
@@ -496,30 +452,29 @@ public class Connect6 extends JFrame implements MouseMotionListener, MouseListen
 
 	}
 
+	
 	@Override
-	public void mouseDragged(MouseEvent e) {
-
+	public void mousePressed(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
 	}
 
 	@Override
-	public void mouseMoved(MouseEvent e) {
-
+	public void mouseReleased(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
 	}
 
 	@Override
 	public void mouseEntered(MouseEvent e) {
-
+		// TODO Auto-generated method stub
+		
 	}
 
 	@Override
 	public void mouseExited(MouseEvent e) {
-
-	}
-
-	@Override
-	public void mousePressed(MouseEvent e) {
 		// TODO Auto-generated method stub
-
+		
 	}
 
 }
