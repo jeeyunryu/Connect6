@@ -447,7 +447,7 @@ public class Connect6 extends JFrame implements MouseListener {
 		contentPane.add(btnNewButton, gbc_btnNewButton);
 		setSize(700, 700);
 		setResizable(false);
-		addMouseMotionListener(this);
+		
 		addMouseListener(this);
 
 	}
