@@ -4,6 +4,7 @@ Please run this file.
 - Connect6.java
 
   \<Game Rule\>
+
   There are 3 type of stones
   Red: Obstacle (No user can put their stone in this spot)
   White/Black: Each user Chooses a color
